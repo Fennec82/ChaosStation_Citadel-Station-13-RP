@@ -2293,6 +2293,7 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
+/obj/landmark/free_ai_shell,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai)
 "ahG" = (
@@ -13695,6 +13696,7 @@
 /obj/machinery/camera/network/command{
 	dir = 8
 	},
+/obj/landmark/free_ai_shell,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai)
 "aQV" = (
@@ -26540,6 +26542,10 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/rift/stairwell/primary/surfacethree)
+"tgE" = (
+/obj/landmark/free_ai_shell,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ai)
 "tiv" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
@@ -57254,7 +57260,7 @@ eod
 eod
 ahF
 aQU
-aAi
+tgE
 eod
 eod
 eod

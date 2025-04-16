@@ -1,0 +1,7 @@
+author: "Arrhythmia_V"
+delete-after: True
+changes:
+  - rscadd: "Atlas map now has 3 free AI shells at round start"
+  - qol: "Atlas solars are now connected to the station at round start"
+  - qol: "Atlas solars now auto-start"
+  - config: "AI shells and solar arrays autostart now enabled"

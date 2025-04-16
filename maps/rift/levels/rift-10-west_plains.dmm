@@ -1279,6 +1279,12 @@
 /obj/structure/fence,
 /turf/simulated/floor/outdoors/snow/lythios43c,
 /area/rift/facility/exterior)
+"fW" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor,
+/area/construction/solarscontrol)
 "ga" = (
 /turf/simulated/wall/r_wall,
 /area/outpost/mining_main/outpost/airlock/one)
@@ -1573,6 +1579,12 @@
 /obj/effect/overlay/snow/floor,
 /turf/simulated/floor/lythios43c/indoors,
 /area/rift/facility/interior/surface)
+"hc" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor,
+/area/construction/solarscontrol)
 "he" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -6769,6 +6781,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost)
+"FK" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/construction/solarscontrol)
 "FL" = (
 /obj/machinery/door/blast/regular{
 	dir = 8;
@@ -35812,9 +35830,9 @@ sv
 sv
 sv
 bY
-Rw
-Rw
-Rw
+fW
+FK
+hc
 Rw
 nd
 RZ

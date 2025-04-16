@@ -5570,7 +5570,8 @@
 	},
 /obj/structure/cable/yellow,
 /obj/machinery/power/solar_control{
-	dir = 1
+	dir = 1;
+	auto_start = 1
 	},
 /turf/simulated/floor,
 /area/construction/solarscontrol)

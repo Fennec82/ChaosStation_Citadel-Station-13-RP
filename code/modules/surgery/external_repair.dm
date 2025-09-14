@@ -35,6 +35,7 @@
 
 	allowed_tools = list(
 	/obj/item/healthanalyzer = 100,
+	/obj/item/autopsy_scanner = 100,
 	/obj/item/atmos_analyzer = 10
 	)
 

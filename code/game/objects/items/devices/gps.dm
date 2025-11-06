@@ -27,6 +27,7 @@
 	origin_tech = list(TECH_MATERIAL = 2, TECH_BLUESPACE = 2, TECH_MAGNET = 1)
 	materials_base = list(MAT_STEEL = 500)
 	worth_intrinsic = 40
+	suit_storage_class = SUIT_STORAGE_CLASS_SOFTWEAR | SUIT_STORAGE_CLASS_HARDWEAR
 
 	/// our GPS tag
 	var/gps_tag = "GEN0"
@@ -388,7 +389,7 @@
 				"name" = sig.gps_tag
 			))
 
-/obj/item/gps/ui_act(action, list/params, datum/tgui/ui)
+/obj/item/gps/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state, datum/event_args/actor/actor)
 	. = ..()
 	if(.)
 		return

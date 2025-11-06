@@ -7,6 +7,8 @@
 	pickup_sound = 'sound/items/pickup/cloth.ogg'
 	item_flags = NONE
 
+	suit_storage_class_allow = SUIT_STORAGE_CLASS_SOFTWEAR
+
 	//? equip
 	/// Inventory slot IDs where this is active for any effects. Used by subtypes, to be potentially refactored in the future.
 	var/list/active_slots
@@ -136,7 +138,7 @@
 		if(!usr.using_perspective || get_dist(usr.using_perspective?.eye, src) > 2)
 			to_chat(usr, SPAN_WARNING("You are too far away!"))
 			return TRUE
-		var/list/assembled = fetch_armor().describe_list()
+		var/list/assembled = fetch_armor().describe_english_list()
 		to_chat(usr, SPAN_BLOCKQUOTE("<center>--- Armor: [src] ---</center><hr>[jointext(assembled, "<br>")]", null))
 		return TRUE
 

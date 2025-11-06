@@ -7,6 +7,7 @@
 	worn_state = "handcuff"
 	worn_render_flags = WORN_RENDER_SLOT_ONE_FOR_ALL
 	slot_flags = SLOT_BELT
+	suit_storage_class = SUIT_STORAGE_CLASS_SOFTWEAR | SUIT_STORAGE_CLASS_HARDWEAR
 	throw_force = 5
 	w_class = WEIGHT_CLASS_SMALL
 	throw_speed = 2
@@ -216,10 +217,15 @@ var/last_chew = 0
 	worn_state = "disruptorcuff"
 	desc = "These cutting edge handcuffs were originally designed by the PMD. Commonly deployed to restrain anomalous lifeforms, disruptor cuffs employ a form of acausal logic engine disruption, in tandem with morphogenic resonance, to neutralize the abilities of technological and biological threats."
 
-/obj/item/handcuffs/disruptor/equipped(var/mob/living/user,var/slot)
+/obj/item/handcuffs/disruptor/equipped(var/mob/living/user, var/slot)
 	. = ..()
 	if(slot == SLOT_ID_HANDCUFFED)
 		ADD_TRAIT(user, TRAIT_DISRUPTED, CLOTHING_TRAIT)
+
+/obj/item/handcuffs/disruptor/unequipped(mob/user, slot, flags)
+	. = ..()
+	if(slot == SLOT_ID_HANDCUFFED)
+		REMOVE_TRAIT(user, TRAIT_DISRUPTED, CLOTHING_TRAIT)
 
 //Legcuffs. Not /really/ handcuffs, but its close enough.
 /obj/item/handcuffs/legcuffs

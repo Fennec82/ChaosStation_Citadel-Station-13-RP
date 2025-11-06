@@ -108,7 +108,7 @@
 	name = "box of syringe gun cartridges"
 	desc = "A box full of compressed gas cartridges."
 	icon_state = "syringe"
-	starts_with = list(/obj/item/syringe_cartridge = 7)
+	starts_with = list(/obj/item/ammo_casing/syringe = 7)
 
 /obj/item/storage/box/beakers
 	name = "box of beakers"
@@ -440,6 +440,7 @@
 	desc = "A small box of 'Space-Proof' premium matches."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "matchbox"
+	suit_storage_class = SUIT_STORAGE_CLASS_SOFTWEAR
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = SLOT_BELT
 	insertion_whitelist = list(/obj/item/flame/match)
